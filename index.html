@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Modern Furniture & Decor</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0F172A; /* Dark blue-gray background */
+            color: #E2E8F0; /* Light gray text */
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #14B8A6; /* Teal on hover */
+        }
+        .hero-button {
+            background-image: linear-gradient(to right, #14B8A6, #0D9488); /* Teal gradient */
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+        .hero-button:hover {
+            background-image: linear-gradient(to right, #0D9488, #14B8A6); /* Reverse gradient on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+            transform: translateY(-3px);
+        }
+        .product-card {
+            background-color: #1E293B; /* Card background */
+            border: 1px solid #334155; /* Subtle border */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Navigation Bar -->
+        <nav class="bg-gray-900 p-6 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="furniture-home.html" class="text-white text-3xl font-bold">FurniLux</a>
+                <div class="space-x-8">
+                    <a href="furniture-home.html" class="nav-link text-gray-300 text-lg font-medium">Home</a>
+                    <a href="furniture-products.html" class="nav-link text-gray-300 text-lg font-medium">Products</a>
+                    <a href="#" class="nav-link text-gray-300 text-lg font-medium">About Us</a>
+                    <a href="#" class="nav-link text-gray-300 text-lg font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="relative bg-gray-800 text-center py-24 px-4 sm:px-6 lg:px-8 flex-grow flex items-center justify-center">
+            <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('https://placehold.co/1920x1080/1F2937/F3F4F6?text=Modern+Living+Space');"></div>
+            <div class="relative z-10 max-w-4xl mx-auto">
+                <h1 class="text-6xl font-extrabold text-white mb-6 leading-tight">
+                    Elevate Your Space with Modern Furniture
+                </h1>
+                <p class="text-2xl text-blue-200 mb-10">
+                    Discover exquisite designs and unparalleled comfort for every room.
+                </p>
+                <a href="furniture-products.html" class="hero-button inline-block text-white font-bold py-5 px-12 rounded-full text-2xl focus:outline-none focus:ring-4 focus:ring-teal-400 focus:ring-opacity-75">
+                    Shop Now
+                </a>
+            </div>
+        </header>
+
+        <!-- Featured Products Section -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900">
+            <div class="container mx-auto">
+                <h2 class="text-5xl font-bold text-white text-center mb-16">Featured Products</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Product Card 1 -->
+                    <div class="product-card rounded-2xl p-8 shadow-xl">
+                        <img src="https://placehold.co/400x300/374151/F3F4F6?text=Sofa" alt="Modern Sofa" class="w-full h-60 object-cover rounded-xl mb-6">
+                        <h3 class="text-3xl font-semibold text-white mb-3">Minimalist Sofa</h3>
+                        <p class="text-lg text-gray-400 mb-4">A perfect blend of comfort and contemporary design.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-teal-400">$1,299</span>
+                            <a href="furniture-product-detail.html?product=sofa" class="text-teal-300 hover:text-teal-500 font-medium text-lg">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 2 -->
+                    <div class="product-card rounded-2xl p-8 shadow-xl">
+                        <img src="https://placehold.co/400x300/374151/F3F4F6?text=Dining+Table" alt="Elegant Dining Table" class="w-full h-60 object-cover rounded-xl mb-6">
+                        <h3 class="text-3xl font-semibold text-white mb-3">Elegant Dining Table</h3>
+                        <p class="text-lg text-gray-400 mb-4">Crafted for memorable gatherings and timeless style.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-teal-400">$899</span>
+                            <a href="furniture-product-detail.html?product=dining-table" class="text-teal-300 hover:text-teal-500 font-medium text-lg">View Details &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Product Card 3 -->
+                    <div class="product-card rounded-2xl p-8 shadow-xl">
+                        <img src="https://placehold.co/400x300/374151/F3F4F6?text=Bed" alt="Comfortable Bed" class="w-full h-60 object-cover rounded-xl mb-6">
+                        <h3 class="text-3xl font-semibold text-white mb-3">Luxury Bed Frame</h3>
+                        <p class="text-lg text-gray-400 mb-4">Experience ultimate comfort and sophisticated design.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-teal-400">$1,499</span>
+                            <a href="furniture-product-detail.html?product=bed" class="text-teal-300 hover:text-teal-500 font-medium text-lg">View Details &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-950 py-12 text-center text-gray-400 text-sm">
+            <p>&copy; 2025 FurniLux. All rights reserved.</p>
+            <p class="mt-2">Designed for modern living.</p>
+        </footer>
+    </div>
+</body>
+</html>
